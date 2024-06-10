@@ -1,0 +1,98 @@
+Printing Stars '*' in Pyramid Shape
+
+Input Format
+
+Read n value
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Printing Stars '*' in Pyramid Shape
+
+Sample Input 0
+
+5
+Sample Output 0
+
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+Sample Input 1
+
+10
+Sample Output 1
+
+         * 
+        * * 
+       * * * 
+      * * * * 
+     * * * * * 
+    * * * * * * 
+   * * * * * * * 
+  * * * * * * * * 
+ * * * * * * * * * 
+* * * * * * * * * * 
+Submissions: 52
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+1
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+​
+6
+int main() {
+7
+int n,i,j,k;
+8
+    scanf("%d",&n);
+9
+    for(i=1;i<=n;i++)
+10
+    {
+11
+        for(k=i;k<=n-1;k++)
+12
+        {
+13
+            printf(" ");
+14
+        }
+15
+        for(j=1;j<=i;j++)
+16
+        {
+17
+            printf("* ");
+18
+        }
+19
+        printf("\n");
+20
+    }
+21
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+22
+    return 0;
+23
+}
+24
+​
